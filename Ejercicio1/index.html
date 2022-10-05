@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog - Ejercicio 1</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel='stylesheet'
         href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 
 <body>
     <!-- START NAV -->
-    <nav class="navbar" style="background-color:lightskyblue;">
+    <nav class="navbar" style="background-color: #007BFF;"  role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="../">
-                    <img src="../images/bulma.png" alt="Logo">
+                <a class="navbar-item" href="index.html" >
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fa-solid fa-car"></i>
+                        </span>
+                    </span>
                 </a>
                 <span class="navbar-burger burger" data-target="navbarMenu">
                     <span></span>
@@ -30,47 +34,26 @@
                 </span>
             </div>
             <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-brand">
-                    <a class="navbar-item is-active">
+                <div class="navbar-brand ">
+                    <a class="navbar-item is-active has-text-white	" href="index.html">
                         Home
                     </a>
-                    <a class="navbar-item">
-                        Acerca De
+                    <a class="navbar-item has-text-white">
+                        About
                     </a>
-                    <a class="navbar-item">
-                        Galeria
+                    <a class="navbar-item has-text-white">
+                        Gallery
                     </a>
-                    <a class="navbar-item">
-                        Equipo
+                    <a class="navbar-item has-text-white">
+                        Blog
                     </a>
-                    <a class="navbar-item">
-                        Ayuda
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            Cuenta
-                        </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item">
-                                Dashboard
-                            </a>
-                            <a class="navbar-item">
-                                Perfil
-                            </a>
-                            <a class="navbar-item">
-                                Configuracion
-                            </a>
-                            <hr class="navbar-divider">
-                            <div class="navbar-item">
-                                Cerrar Sesion
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <a href="https://www.facebook.com/" target="_blank"><button
-                                class="button is-link is-outlined">Facebook</button></a>
+                                class="button is-light is-outlined is-small">Facebook</button></a>
                     </div>
                 </div>
             </div>
@@ -84,22 +67,27 @@
             <div class="columns">
                 <div class="column is-4">
                     <section class="articles">
-                        <div class="card article">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3" id="bg-card">
+
+                                </figure>
+                            </div>
+                            <div id="profile-pic">
+                                <figure class="image is-128x128" >
+                                    <img src="../img/profileImg.png" alt="Profile Picture" class="img-profile">
+                                </figure>
+                            </div>
                             <div class="card-content">
-                                <div class="content article-body"><!-- AQUI PUEDEN EDITAR NO TOCAR LO DE ARRIBA-->
-                                    <p>Non arcu risus quis varius quam quisque. Dictum varius duis at consectetur lorem.
-                                        Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.
-                                    </p>
-                                    <p>Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. In hac
-                                        habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Accumsan
-                                        lacus
-                                        vel facilisis volutpat. Non sodales neque sodales ut etiam.
-                                        Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat
-                                        vivamus.
-                                    </p>
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Titulo</p>
+                                        <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum placeat soluta velit assumenda rerum ut? Impedit doloribus non, nemo suscipit sequi debitis consequuntur nam similique maiores placeat culpa esse quibusdam?</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </section>
                 </div>
                 <div class="column is-8">

@@ -37,7 +37,7 @@
             </div>
             <div id="navbarMenu" class="navbar-menu menu">
                 <div class="navbar-brand">
-                    <a class="navbar-item is-active has-text-white	" href="index.html">
+                    <a class="navbar-item has-text-white	" href="index.html">
                         Home
                     </a>
                     <a class="navbar-item has-text-white">
@@ -55,7 +55,8 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <a href="https://www.facebook.com/" target="_blank"><button
-                                class="button is-light is-outlined is-small">Facebook</button></a>
+                                class="button is-light is-outlined is-small">Facebook</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -81,12 +82,35 @@
                                 </figure>
                             </div>
                             <div class="card-content">
-
-                                <div class="media">
-                                    <div class="media-content">
-                                        <p class="title is-4">Titulo</p>
-                                        <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum placeat soluta velit assumenda rerum ut? Impedit doloribus non, nemo suscipit sequi debitis consequuntur nam similique maiores placeat culpa esse quibusdam?</p>
+                                <div class="media-center">
+                                    <div class="media-content mb-5">
+                                        <p class="title is-4 has-text-centered">Dodge Charger</p>
+                                        <p class="subtitle is-6 has-text-centered">Con proporciones fuertes y un estilo elegante, el Dodge Charger es la encarnación de la fuerza. Desde una parrilla atractiva a un estilo de moldura lateral que se reconoce al instante, no lo piense y robe la atención en todas las rutas.</p>
+                                        <div class="has-text-centered">
+                                            <a>
+                                                <button class="button is-info">Go somewhere</button>
+                                            </a>
+                                            
+                                            <a href="https://www.instagram.com/" target="_blank">
+                                                <button class="button">Instagram</button>
+                                            </a>
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <header class="card-header">
+                                <p class="card-header-title">Cita</p>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Olvídate de Chevrolets, Thunderbirds y Mustangs; cualquiera que haya visto televisión en los años ochenta le dirá que el automóvil más famoso de Estados Unidos es el Dodge Charger...</p>
+                                    
+                                    <p class="has-text-grey-light is-size-6 "> 
+                                        Marty Padgett in <a href="https://www.autoexpress.co.uk/car-reviews/16175/dodge-charger-rt" target="_blank" class="has-text-link-dark	">Autoexpress</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -126,17 +150,9 @@
                                         
                                         
                                             <br><button class="button is-info is-outlined">Mas Informacion</button>
-                                        </p>
+                                    </p>
 
-                                    <h3 class="has-text-centered">How to properly center tags in bulma?</h3>
-                                    <p> Proper centering of tags in bulma is done with class:
-                                    <pre>level-item</pre>
-                                    Voluptat ut farmacium tellus in metus vulputate. Feugiat in fermentum posuere urna
-                                    nec.
-                                    Pharetra convallis posuere morbi leo urna molestie.
-                                    Accumsan lacus vel facilisis volutpat est velit egestas. Fermentum leo vel orci
-                                    porta.
-                                    Faucibus interdum posuere lorem ipsum.</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -153,22 +169,22 @@
     <!-- Inicio de footer -->
     <footer class="footer" style="background-color: lightskyblue;">
         <div class="container">
-          <div class="content has-text-centered">
+            <div class="content has-text-centered">
             <div class="soc">
-              <a href="https://github.com/" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
-              <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
-              <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
             </div>
             <p>
                 <br>
-              <strong>Proyecto</strong> hecho por:<br> <br>- Rodrigo Jose Portillo Bonilla (023520).<br>
+                <strong>Proyecto</strong> hecho por:<br> <br>- Rodrigo Jose Portillo Bonilla (023520).<br>
                 - Jonathan Alberto Larios Valdez (049120).<br>- Jose Daniel Osorio Elia (212318)<br><br>
                 <b>Copyright 2022.</b>
             </p>
-          </div>
+            </div>
         </div>
-      </footer>
+    </footer>
     <!-- Final de footer -->
     <script async type="text/javascript" src="../js/bulma.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
@@ -177,20 +193,20 @@
     document.addEventListener("DOMContentLoaded", function() {
           //The first argument are the elements to which the plugin shall be initialized
           //The second argument has to be at least a empty object or a object with your desired options
-          OverlayScrollbars(document.querySelectorAll("body"), { });
-      });
+            OverlayScrollbars(document.querySelectorAll("body"), { });
+        });
 
     document.addEventListener('DOMContentLoaded', () => {
 
       // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
       // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
+        if ($navbarBurgers.length > 0) {
 
         // Add a click event on each of them
         $navbarBurgers.forEach(el => {  
-          el.addEventListener('click', () => {
+            el.addEventListener('click', () => {
 
             // Get the target from the "data-target" attribute
             const target = el.dataset.target;
@@ -199,10 +215,12 @@
             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
             el.classList.toggle('is-active');
             $target.classList.toggle('is-active');
+            //Clase para cambiar de color el background cuando se despliegue el burger
+            $target.classList.toggle('activeColor')
 
-          });
+            });
         });
-      }
+        }
 
     });
 </script>

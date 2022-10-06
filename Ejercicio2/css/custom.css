@@ -1,0 +1,71 @@
+
+
+#bg-card{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../../img/bg-card.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#profile-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: -45px 0 -40px 0;
+}
+
+.img-profile{
+    border-radius: 50%;
+    border: 5px solid whitesmoke ;
+}
+
+.activeColor{
+    background-color: #007BFF;
+}
+
+.linkQuote{
+    text-decoration: none;
+}
+
+#bg-card-corolla{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../../img/corolla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#bg-card-mustang{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../../img/mustang.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#bg-card-elantra{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../../img/elantra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

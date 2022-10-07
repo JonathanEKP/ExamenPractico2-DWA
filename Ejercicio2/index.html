@@ -14,12 +14,17 @@
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="css/bulma-carousel.min.css">
+    
 
 </head>
 
 <body>
     <!-- START NAV -->
-    <nav class="navbar is-fixed-top" style="background-color: white;"  role="navigation" aria-label="main navigation" >
+    
+    <h1 class="is-size-1 m-auto has-text-centered has-text-grey-light">EMPRESA</h1>
+    <hr>
+    <nav id="nav" class="navbar" style="background-color: white;"  role="navigation" aria-label="main navigation" >
         <div class="container" >
             <div class="navbar-brand">
                 <span class="navbar-burger burger" data-target="navbarMenu">
@@ -30,18 +35,18 @@
             </div>
             <div id="navbarMenu" class="navbar-menu menu">
                 <div class="m-auto">
-                    <div class="navbar-brand">
-                        <a class="navbar-item has-text-black" href="index.html">
+                    <div class="navbar-brand ">
+                        <a class="navbar-item has-text-primary is-uppercase has-text-weight-bold " href="index.html">
                             Home
                         </a>
-                        <a class="navbar-item has-text-black">
-                            About
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                            nosotros
                         </a>
-                        <a class="navbar-item has-text-black">
-                            Gallery
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                            servicios
                         </a>
-                        <a class="navbar-item has-text-black">
-                            Blog
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                            contacto
                         </a>
                         
                     </div>
@@ -49,113 +54,34 @@
             </div>
         </div>
     </nav>
-    <hr style="margin-top: 10vh;">
+        
+    
+    
+    <hr>
     <!-- END NAV -->
 
-    <!-- Inicio de Seccion Media -->
-    <section class="section p-2">
+    <!-- Inicio de slider -->
+    <section class="section">
         <div class="container">
-            <div class="columns">
-                <div class="column is-4">
-                    <section class="articles">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3" id="bg-card">
-
-                                </figure>
-                            </div>
-                            <div id="profile-pic">
-                                <figure class="image is-128x128" >
-                                    <img src="../img/profileImg.png" alt="Profile Picture" class="img-profile">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media-center">
-                                    <div class="media-content mb-5">
-                                        <p class="title is-4 has-text-centered">Dodge Charger</p>
-                                        <p class="subtitle is-6 has-text-centered">Con proporciones fuertes y un estilo elegante, el Dodge Charger es la encarnación de la fuerza. Desde una parrilla atractiva a un estilo de moldura lateral que se reconoce al instante, no lo piense y robe la atención en todas las rutas.</p>
-                                        <div class="has-text-centered">
-                                            <a>
-                                                <button class="button is-info">Go somewhere</button>
-                                            </a>
-                                            
-                                            <a href="https://www.instagram.com/" target="_blank">
-                                                <button class="button">Instagram</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-3">
-                            <header class="card-header">
-                                <p class="card-header-title">Cita</p>
-                            </header>
-                            <div class="card-content">
-                                <div class="content">
-                                    <p>Olvídate de Chevrolets, Thunderbirds y Mustangs; cualquiera que haya visto televisión en los años ochenta le dirá que el automóvil más famoso de Estados Unidos es el Dodge Charger...</p>
-                                    
-                                    <p class="has-text-grey-light is-size-6 "> 
-                                        Marty Padgett in <a href="https://www.autoexpress.co.uk/car-reviews/16175/dodge-charger-rt" target="_blank" class="has-text-link-dark	">Autoexpress</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </section>
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="carousel">
+                <div class="item-1">
+                    <img src="../img/slider1.jpg" alt="Foto de slider 1">
                 </div>
-                <div class="column is-8">
-                    <!-- START ARTICLE FEED -->
-                    <section class="articles">
-                        <!--<>div class="column ">-->
-                        <!-- START ARTICLE -->
-                        <div class="card article">
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content has-text-centered">
-                                        <p class="title article-title">Estas son las marcas del momento.
-                                        </p>
-                                        <div class="tags has-addons level-item">
-                                            <span class="tag is-rounded is-info">@showcar</span>
-                                            <span class="tag is-rounded">Oct 5, 2022</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="content article-body"><!-- AQUI PUEDEN EDITAR NO TOCAR LO DE ARRIBA-->
-                                    <p class="box has-text-centered">  <strong>Toyota</strong><br>
-                                        <img src="../img/toyota.png" width="80px" height="100px"><br>
-                                        Toyota tiene modelos de autos que ofrecen algo para todos. Puedes confiar en Toyota, ya sea que estés buscando un auto compacto para ir al trabajo, uno deportivo para divertirte o un vehículo familiar para transportar a tus seres queridos a donde sea que necesiten ir de manera segura.
-                                        <br></br>
-                                        <a href="pagToyota.html"><button class="button is-info is-outlined">Mas informacion</button></a>
-                                    </p>       
-                                
-                                    <p class="box has-text-centered"> <strong>Ford</strong><br>
-                                        <img src="../img/ford.png" width="80px" height="100px"><br>
-                                        Es el clásico auto de desempeño que solo continúa mejorando. Prepárate para hacer rugir el Mustang Mach 1 y Mach 1 Premium, con diseño y desempeño inspirados en la aerodinámica. También está el ícono, que es el Shelby GT500® altamente potente y monumental. Si buscas diversión con el techo bajo, también están: EcoBoost® y GT Mustang convertibles. Y puesto que Mustang debe adaptarse a ti, ofrece 18 estilos de ruedas diferentes, las opciones de colores exclusivos y nuevos, una amplia variedad de asientos disponibles y muchas características para personalizar tu auto.
-                                        <br><br>
-                                        <a href="pagFord.html" target="_blank"><button class="button is-info is-outlined">Mas informacion</button></a>
-                                    </p>
-                                    
-                                    <p class="box has-text-centered"> <strong>Hyundai</strong><br>
-                                        <img src="../img/hyundai.png" width="80px" height="100px"><br>
-                                        Hyundai E Conoce nuestra amplia gama de modelos, concesionarios y todos los servicios especialmente pensados para ti.
-                                        <br><br>
-                                        <a href="pagHyundai.html" target="_blank"><button class="button is-info is-outlined" >Mas informacion</button></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END ARTICLE -->
-                        
-                    </section>
-                    <!-- END ARTICLE FEED -->
+                <div class="item-2">
+                    <img src="../img/slider2.jpg" alt="Foto de slider 2">
+                </div>
+                <div class="item-3">
+                    <img src="../img/slider3.jpg" alt="Foto de slider 3">
+                </div>
+                <div class="item-4">
+                    <img src="../img/slider4.jpg" alt="foto de slider 4">
                 </div>
             </div>
+            <!-- End Carousel -->
         </div>
     </section>
-    <!-- FINAL de Seccion Media -->
+    <!-- FINAL de slider -->
 
     <!-- Inicio de footer -->
     <footer class="footer" style="background-color: lightskyblue;">
@@ -179,8 +105,18 @@
     <!-- Final de footer -->
     <script async type="text/javascript" src="../js/bulma.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
-
+    <script src="js/bulma-carousel.min.js"></script>
+    
 <script>
+    /*Slider code*/
+    bulmaCarousel.attach('#carousel-demo', {
+			slidesToScroll: 1,
+			slidesToShow: 1,
+            breakpoints: [{ changePoint: 480, slidesToShow: 1, slidesToScroll: 1 }, { changePoint: 640, slidesToShow: 2, slidesToScroll: 2 }, { changePoint: 768, slidesToShow: 3, slidesToScroll: 3 } ]
+		});
+
+
+
     document.addEventListener("DOMContentLoaded", function() {
           //The first argument are the elements to which the plugin shall be initialized
           //The second argument has to be at least a empty object or a object with your desired options
@@ -207,7 +143,7 @@
             el.classList.toggle('is-active');
             $target.classList.toggle('is-active');
             //Clase para cambiar de color el background cuando se despliegue el burger
-            $target.classList.toggle('activeColor')
+            $target.classList.toggle('m-auto')
 
             });
         });

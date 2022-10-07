@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - Ejercicio 2: Contactanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <script>
+        function procesarInfo() {
+            //Seleccion de objetos a nivel consola
+            var entradas = document.getElementsByTagName("input")
+            var combos = document.getElementsByTagName("select")
+            var comentario = document.getElementsByTagName("textarea")
+
+
+            function validaVacio(valor) {
+                valor = valor.replace("&nbsp;", "");
+                valor = valor == undefined ? "" : valor;
+                if (!valor || 0 === valor.trim().length) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            if (validaVacio(entradas[0].value) || validaVacio(entradas[1].value) || validaVacio(entradas[2].value)
+                || validaVacio(combos[0].value) || validaVacio(combos[1].value) || validaVacio(combos[2].value)) {  //COMPRUEBA CAMPOS VACIOS
+                alert("¡Campos vacios! Por favor llenarlos para contactar...")
+            } else {
+                alert('¡Felicidades! Envio exitoso... \n\n         Información: \n- Nombre: ' +
+                    entradas[0].value + ' ' + entradas[1].value + '\n- Correo: ' + entradas[2].value +
+                    '\n- Género: ' + combos[0].value + '\n- Escolaridad: ' + combos[1].value + '\n- Interes: ' + combos[2].value +
+                    '\n- Comentario: ' + comentario[0].value)
+            }
+            location.reload()
+        }
+    </script>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <h1 class="is-size-1 m-auto has-text-centered has-text-grey-light">EMPRESA</h1>
+    <hr>
+    <nav id="nav" class="navbar" style="background-color: white;" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu menu">
+                <div class="m-auto">
+                    <div class="navbar-brand ">
+                        <a class="navbar-item has-text-primary is-uppercase has-text-weight-bold " href="../index.html">
+                            Home
+                        </a>
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                            nosotros
+                        </a>
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                            servicios
+                        </a>
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                            contacto
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+    <div class="container box p-6
+				has-background-light">
+        <h1 class="title has-text-centered
+				has-text-link">
+            SHOW CAR'S
+        </h1>
+        <h2 class="subtitle has-text-centered has-text-dark">
+            Formulario de Contacto
+        </h2>
+
+        <div class="field">
+            <label class="label">Nombres</label>
+            <div class="control has-icons-left
+					has-icons-right">
+                <input name="form" class="input is-light" type="text" placeholder="Ingresa tus nombres" is required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Apellidos</label>
+            <div class="control has-icons-left
+					has-icons-right">
+                <input name="form" class="input is-light" type="text" placeholder="Ingresa tus apellidos" is required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Correo</label>
+            <div class="control has-icons-left
+					has-icons-right">
+                <input name="form" class="input is-light" type="email" placeholder="Ingresa tu correo" is required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">
+                Género:
+            </label>
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option>--Seleccione--</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Indefinido</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">
+                Escolaridad:
+            </label>
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option>--Seleccione--</option>
+                        <option>Educación Básica</option>
+                        <option>Educación Media</option>
+                        <option>Educación Avanzada</option>
+                        <option>Maestría</option>
+                        <option>Doctorado</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">
+                Intereses:
+            </label>
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option>--Seleccione--</option>
+                        <option>Entretenimiento</option>
+                        <option>Social y Cívica</option>
+                        <option>Economía</option>
+                        <option>Música</option>
+                        <option>Tecnología</option>
+                        <option>Automóviles</option>
+                        <option>Belleza</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">
+                ¿Algo más?
+            </label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Comentarios..."></textarea>
+            </div>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" onclick="procesarInfo()">
+                    Ingresar
+                </button>
+            </div>
+            <div class="control">
+                <button class="button is-link is-light" onclick="location.reload()">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicio de footer -->
+    <footer class="footer" style="background-color: whitesmoke; max-height: 100px;">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div class="soc">
+                    <p><strong>Redes Sociales</strong></p>
+                    <a href="https://github.com/" target="_blank"> <i class="fa fa-github-alt fa-lg" aria-hidden="true"
+                            role="generic"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"> <i class="fa fa-youtube fa-lg"
+                            aria-hidden="true" role="generic"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/home" target="_blank"> <i class="fa fa-twitter fa-lg"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Final de footer -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //The first argument are the elements to which the plugin shall be initialized
+            //The second argument has to be at least a empty object or a object with your desired options
+            OverlayScrollbars(document.querySelectorAll("body"), {});
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                        //Clase para cambiar de color el background cuando se despliegue el burger
+                        $target.classList.toggle('m-auto')
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

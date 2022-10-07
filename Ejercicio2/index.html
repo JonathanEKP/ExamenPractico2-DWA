@@ -78,6 +78,7 @@
             <!-- End Carousel -->
         </div>
     </section>
+
     <!-- FINAL de slider -->
     <!--INICIO DEL CONTENIDO-->
     <section class="section ">
@@ -154,42 +155,63 @@
         <div class="container">
             <div class="columns mb-1">
                 <div class="column is-4">
-                    <article class="articles">
+                    
                         <div class="card">
                             <div class="card-image">
-                                <figure class="image is-4by3" id="bg-port1">
-
+                                <figure class="image is-4by3" id="bg-port">
+                                    <img src="../img/portfolio1.jpg" alt="">
                                 </figure>
                             </div>
                         </div>
-                    </article>
+                    
                 </div>
                 <div class="column is-4">
-                    <article class="articles">
                         <div class="card">
                             <div class="card-image">
-                                <figure class="image is-4by3" id="bg-port2">
-
+                                <figure class="image is-4by3" id="bg-port">
+                                    <img src="..//img/portfolio2.jpg" alt="">
                                 </figure>
                             </div>
                         </div>
-                    </article>
+                    
                 </div>
                 <div class="column is-4">
-                    <article class="articles">
+                    
                         <div class="card">
                             <div class="card-image">
-                                <figure class="image is-4by3" id="bg-port3">
-
+                                <figure class="image is-4by3" id="bg-port" >
+                                    <img src="../img/portfolio3.jpg" alt="">
                                 </figure>
                             </div>
                         </div>
-                    </article>
+                    
                 </div>
             </div>
             <h3 class="is-size-4 has-text-grey-dark has-text-centered is-italic has-text-weight-medium ">
                 Empresa lider en la región con años de experiencia y trayectoria en la industria <span class="has-text-primary">automotriz.</span>
             </h3> 
+        </div>
+    </section>
+
+    <!--INICIO DE TESTIMONIOS-->
+    
+    <h1 class="is-size-2 m-auto has-text-centered has-text-grey">TESTIMONIOS</h1>
+    <section class="section">
+        <div class="container">
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="carousel m-auto">
+                    <div class="item-1 has-text-centered p-5 is-italic">
+                        <h2>La resolución que dan a la hora de comprar un vehiculo es incomparable, me voy muy satisfecho y regresaré.</h2>
+                    </div>
+                    <div class="item-2 has-text-centered p-5 is-italic">
+                        <h2>La atención al cliente es increible, llevo varias compras con esta empresa y nunca decepcionan.</h2>
+                    </div>
+                    <div class="item-3 has-text-centered p-5 is-italic">
+                        <h2>Esta empresa sin duda da todo por el cliente, los mejores <br> precios y ofertas que se pueden encontrar en el mercado, son los mejores.</h2>
+                    
+                    </div>
+                
+            <!-- End Carousel -->
         </div>
     </section>
 
@@ -223,7 +245,12 @@
     bulmaCarousel.attach('#carousel-demo', {
 			slidesToScroll: 1,
 			slidesToShow: 1,
-            breakpoints: [{ changePoint: 480, slidesToShow: 1, slidesToScroll: 1 }, { changePoint: 640, slidesToShow: 2, slidesToScroll: 2 }, { changePoint: 768, slidesToShow: 3, slidesToScroll: 3 } ]
+            breakpoints: 
+            [
+                { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+                { changePoint: 640, slidesToShow: 1, slidesToScroll: 2 },
+                { changePoint: 768, slidesToShow: 1, slidesToScroll: 3 } 
+            ]
 		});
 
 

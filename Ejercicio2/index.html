@@ -45,7 +45,7 @@
                         <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="html/contact.html" target="_blank">
                             contacto
                         </a>
-                        <a href="html/login.html" class="navbar-item m-auto"><button
+                        <a  class="js-modal-trigger navbar-item m-auto" data-target="modalForm"><button
                             class="button is-primary is-small">Login</button>
                         </a>
                         
@@ -245,9 +245,107 @@
         </div>
     </footer>
     <!-- Final de footer -->
+    <!--MODAL-->
+    <div class="modal" id="modalForm">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">LOGIN</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <div class="container box p-6
+				has-background-light">
+        <form>
+        <h1 class="title has-text-centered
+				has-text-link">
+                Formulario de Inicio de Sesión
+        </h1>
+        
+
+        <div class="field">
+            <label class="label">Nombre de Usuario</label>
+            <div class="control has-icons-left
+					has-icons-right">
+                <input name="form" class="input is-light" type="text" placeholder="Ingresa tu nombre de usuario" is
+                    required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Correo</label>
+            <div class="control has-icons-left
+					has-icons-right">
+                <input name="form" class="input is-light" type="email" placeholder="Ingresa tu email" is required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Contraseña</label>
+            <div class="control has-icons-left
+					has-icons-right">
+                <input name="form" class="input is-light" type="password" placeholder="Ingresa tu contraseña" is
+                    required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-key"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">
+                Elige tu Sexo:
+            </label>
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                        <option>Indefinido</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="control">
+                <label class="checkbox">
+                    <input type="checkbox" />
+                    Estoy de acuerdo con los <a href="#"> términos y condiciones.
+                    </a>
+                </label>
+            </div>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" onclick="validarInicio()">
+                    Ingresar
+                </button>
+            </div>
+            <div class="control">
+                <button class="button is-link is-light" onclick="location.reload()">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+        </form>
+    </div>
+          </section>
+          
+        </div>
+      </div>
+    <!--FIN DE MODAL-->
     <script async type="text/javascript" src="../js/bulma.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
     <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/modal.js"></script>
 <script>
     /*Slider code*/
     bulmaCarousel.attach('#carousel-demo', {
@@ -261,6 +359,31 @@
             ]
 		});
 
+    /*Form validation code*/
+    
+
+    function validarInicio() {
+        var user = document.getElementsByTagName("input")
+
+        function validaVacio(valor) {
+            valor = valor.replace("&nbsp;", "");
+            valor = valor == undefined ? "" : valor;
+            if (!valor || 0 === valor.trim().length) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        if (validaVacio(user[0].value) || validaVacio(user[1].value) || validaVacio(user[2].value)) {  //COMPRUEBA CAMPOS VACIOS
+            alert("¡Campos vacios! Por favor llenarlos para iniciar sesion...")
+        } else {
+            alert("¡Felicidades! Inicio de sesion exitoso...")
+            location.reload()
+        }
+        
+}
 
 
     document.addEventListener("DOMContentLoaded", function() {

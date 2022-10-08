@@ -42,24 +42,12 @@
                         <a class="navbar-item has-text-primary is-uppercase has-text-weight-bold m-auto" href="../index.html">
                             Home
                         </a>
-                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="../index.html/#nosotros">
-                            nosotros
-                        </a>
-                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="../index.html/#servicios">
-                            servicios
-                        </a>
                         <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="contact.html" target="_blank">
                             contacto
                         </a>
                         <a href="login.html" class="navbar-item m-auto"><button
                             class="button is-primary is-small">Login</button>
                         </a>
-                        <div class="navbar-brand ">
-                            <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="preguntas.html">
-                                
-                            </a>
-                            
-                        </div>
                     </div>  
                 </div>
             </div>
@@ -205,14 +193,66 @@
                 </div>
             </div>
         </article>
+    </div><br><br>
 
-    </div>
+    <footer class="footer" style="background-color: whitesmoke;">
+        <div class="container">
+            <div class="content has-text-centered">
+            <div class="soc">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-square-google-plus" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-square-twitter" aria-hidden="true"></i></a>
+            </div>
+            <p>
+                <br>
+                <strong>Proyecto</strong> hecho por:<br> <br>- Rodrigo Jose Portillo Bonilla (023520).<br>
+                - Jonathan Alberto Larios Valdez (049120).<br>- Jose Daniel Osorio Elia (212318)<br><br>
+                <b>Copyright 2022.</b>
+            </p>
+            </div>
+        </div>
+    </footer>
 
     <!--<script type="text/javascript" src="/node_modules/bulma-accordion/dist/js/bulma-accordion.min.js"></script>-->
     <script src="../js/bulma-collapsible.min.js"></script>
     <script>
         //var accordions = bulmaAccordion.attach('is-collapsible'); // accordions now contains an array of all Accordion instances
         const bulmaCollapsibleElement = bulmaCollapsible.attach('.is-collapsible')
+
+        document.addEventListener("DOMContentLoaded", function() {
+          //The first argument are the elements to which the plugin shall be initialized
+          //The second argument has to be at least a empty object or a object with your desired options
+            OverlayScrollbars(document.querySelectorAll("body"), { });
+        });
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {  
+            el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+            //Clase para cambiar de color el background cuando se despliegue el burger
+            $target.classList.toggle('m-auto')
+            $target.classList.toggle('pt-5')
+            $target.classList.toggle('is-small')
+            });
+        });
+        }
+
+    });
     </script>
 </body>
 

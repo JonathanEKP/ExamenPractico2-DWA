@@ -19,7 +19,7 @@
 
 <body>
     <!-- START NAV -->
-    <h1 class="is-size-1 m-auto has-text-centered has-text-grey-light">EMPRESA</h1>
+    <h1 class="is-size-1 m-auto has-text-centered has-text-grey-light is-uppercase">AutoStar Enterprise</h1>
     <hr>
     <nav id="nav" class="navbar" style="background-color: white;"  role="navigation" aria-label="main navigation" >
         <div class="container" >
@@ -32,21 +32,31 @@
             </div>
             <div id="navbarMenu" class="navbar-menu menu">
                 <div class="m-auto">
-                    <div class="navbar-brand ">
-                        <a class="navbar-item has-text-primary is-uppercase has-text-weight-bold " href="index.html">
+                    <div class="navbar-brand">
+                        <a class="navbar-item has-text-primary is-uppercase has-text-weight-bold m-auto" href="index.html">
                             Home
                         </a>
-                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="#nosotros">
                             nosotros
                         </a>
-                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="#servicios">
                             servicios
                         </a>
-                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold">
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto" href="html/contact.html" target="_blank">
                             contacto
+                        </a>
+                        <a href="html/login.html" class="navbar-item m-auto"><button
+                            class="button is-primary is-small">Login</button>
                         </a>
                         
                     </div>
+                    <div class="navbar-brand ">
+                        <a class="navbar-item has-text-grey is-uppercase has-text-weight-bold m-auto">
+                            preguntas frecuentes
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -82,7 +92,7 @@
     <!-- FINAL de slider -->
     <!--INICIO DEL CONTENIDO-->
     <section class="section ">
-        <div class="container">
+        <div class="container" id="servicios">
             <div class="columns mb-1">
                 <div class="column is-4">
                     <article class="articles">
@@ -150,7 +160,7 @@
     <hr class="mb-6">
     <hr>
 
-    <h1 class="is-size-2 m-auto has-text-centered has-text-grey">NUESTRO PORTAFOLIO</h1>
+    <h1 class="is-size-2 m-auto has-text-centered has-text-grey" id="nosotros">NUESTRO PORTAFOLIO</h1>
     <section class="section ">
         <div class="container">
             <div class="columns mb-1">
@@ -158,8 +168,8 @@
                     
                         <div class="card">
                             <div class="card-image">
-                                <figure class="image is-4by3" id="bg-port">
-                                    <img src="../img/portfolio1.jpg" alt="">
+                                <figure class="image is-4by3" >
+                                    <img src="../img/portfolio1.jpg" alt="" id="bg-port">
                                 </figure>
                             </div>
                         </div>
@@ -168,8 +178,8 @@
                 <div class="column is-4">
                         <div class="card">
                             <div class="card-image">
-                                <figure class="image is-4by3" id="bg-port">
-                                    <img src="..//img/portfolio2.jpg" alt="">
+                                <figure class="image is-4by3" >
+                                    <img src="..//img/portfolio2.jpg" alt="" id="bg-port">
                                 </figure>
                             </div>
                         </div>
@@ -179,15 +189,15 @@
                     
                         <div class="card">
                             <div class="card-image">
-                                <figure class="image is-4by3" id="bg-port" >
-                                    <img src="../img/portfolio3.jpg" alt="">
+                                <figure class="image is-4by3"  >
+                                    <img src="../img/portfolio3.jpg" alt="" id="bg-port">
                                 </figure>
                             </div>
                         </div>
                     
                 </div>
             </div>
-            <h3 class="is-size-4 has-text-grey-dark has-text-centered is-italic has-text-weight-medium ">
+            <h3 class="is-size-4 has-text-grey-dark has-text-centered is-italic has-text-weight-medium">
                 Empresa lider en la región con años de experiencia y trayectoria en la industria <span class="has-text-primary">automotriz.</span>
             </h3> 
         </div>
@@ -210,7 +220,7 @@
                         <h2>Esta empresa sin duda da todo por el cliente, los mejores <br> precios y ofertas que se pueden encontrar en el mercado, son los mejores.</h2>
                     
                     </div>
-                
+            </div>
             <!-- End Carousel -->
         </div>
     </section>
@@ -221,10 +231,9 @@
         <div class="container">
             <div class="content has-text-centered">
             <div class="soc">
-                <a href="https://github.com/" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-square-google-plus" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-square-twitter" aria-hidden="true"></i></a>
             </div>
             <p>
                 <br>
@@ -239,7 +248,6 @@
     <script async type="text/javascript" src="../js/bulma.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
     <script src="js/bulma-carousel.min.js"></script>
-    
 <script>
     /*Slider code*/
     bulmaCarousel.attach('#carousel-demo', {
@@ -282,12 +290,15 @@
             $target.classList.toggle('is-active');
             //Clase para cambiar de color el background cuando se despliegue el burger
             $target.classList.toggle('m-auto')
-
+            $target.classList.toggle('pt-5')
+            $target.classList.toggle('is-small')
             });
         });
         }
 
     });
+
+    
 </script>
 </body>
 </html>

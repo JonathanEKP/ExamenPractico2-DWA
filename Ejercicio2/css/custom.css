@@ -1,3 +1,6 @@
+
+
+
 #nav{
     
     margin: -20px 0 -20px 0;
@@ -47,8 +50,4 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
-
-#bg-port{
-    object-fit: cover;
 }
